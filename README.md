@@ -1,7 +1,7 @@
 # 🚇 Sürcüsüz Metro Simülasyonu - Rota Optimizasyonu
 
 ## 📄 Proje Açıklaması
-Bu proje, bir metro ağında iki istasyon arasındaki **en hızlı** ve **en az aktarmalı** rotayı bulan bir simülasyon geliştirmeyi amaçlamaktadır. Graf veri yapısı kullanılarak modellenen metro ağında, **BFS (Breadth-First Search)** algoritması ile en az aktarma yapılan rota, **A* algoritması** ile en hızlı rota bulunur.
+Bu proje, bir metro ağında iki istasyon arasındaki **en hızlı** ve **en az aktarmalı** rotayı bulan bir simülasyon geliştirmeyi amaçlamaktadır. Graf veri yapısı kullanılarak modellenen metro ağında, **BFS (Breadth-First Search)** algoritması ile en az aktarma yapılan rota, **A\* algoritması** ile en hızlı rota bulunur.
 
 Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geliştirmek hedeflenmiştir.
 

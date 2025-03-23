@@ -73,9 +73,10 @@ Kod çalıştırıldığında, sabit olarak belirlenmiş istasyonlar üzerinden 
 Örneğin:
 
 ```
-Senaryo 1: AŞTİ'den OSB'ye:
-En az aktarmalı rota: M1 -> K4
-En hızlı rota (15 dakika): M1 -> K4
+
+Senaryo 1: AŞTİ'den OSB'ye: 
+En az aktarmalı rota: AŞTİ → Kızılay -> Kızılay -> Ulus-> Demetevler -> OSB 
+En hızlı rota (25 dakika): AŞTİ -> Kızılay -> Kızılay -> Ulus -> Demetevler -> OSB
 ```
 
 Kod içerisinde başlangıç ve bitiş noktaları şu şekilde sabit olarak verilmiştir:

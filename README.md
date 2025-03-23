@@ -9,7 +9,7 @@ Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geli
 
 ## ⚙️ Kullanılan Teknolojiler ve Kütüphaneler
 
-- **Python 3.x**  
+- **Python 3.13.2**  
   Proje Python programlama dili kullanılarak geliştirilmiştir.
 
 - **collections**  

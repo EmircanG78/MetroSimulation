@@ -1,4 +1,4 @@
-# 🚇 Sürcüsüz Metro Simülasyonu - Rota Optimizasyonu
+# 🚇 Sürücüsüz Metro Simülasyonu - Rota Optimizasyonu
 
 ## 📄 Proje Açıklaması
 Bu proje, bir metro ağında iki istasyon arasındaki **en hızlı** ve **en az aktarmalı** rotayı bulan bir simülasyon geliştirmeyi amaçlamaktadır. Graf veri yapısı kullanılarak modellenen metro ağında, **BFS (Breadth-First Search)** algoritması ile en az aktarma yapılan rota, **A\* algoritması** ile en hızlı rota bulunur.
@@ -43,8 +43,8 @@ Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geli
   En hızlı yolu bulmada performanslıdır. Hem gerçek maliyeti (geçilen yolların süreleri), hem de tahmini maliyeti (hedefe olan uzaklık/süre) dikkate alır.
 
 - **Kodda Kullanılma Şekli**  
-  A* algoritmasından en iyi şekilde verim almak için vektörlerle çalışmak daha iyidir. Fakat kod içinde vektörler verilmediği ve vektörleri rastgele atayamayacağım (hata çıkma olasılığı yüksek) için A* algoritmasının heuristik değerini 0'a ayarladım. Heuristik değerinin 0'a ayarlanmasıyla birlikte A* algoritması Dijkstra algoritması gibi davranır. Yani daha yavaş ve güvenli.
-
+  A* algoritmasından tam verim almak için istasyonlara konum (vektör) bilgisi eklenmesi gerekir. Ancak elimizde vektör verisi olmadığı ve rastgele vektör atamak hatalı sonuçlara yol açabileceği için, A* algoritmasında heuristik değerini 0 olarak ayarladım. Böylece A* algoritması Dijkstra algoritması gibi çalışır;
+  yani daha yavaş ama kesin ve güvenli.
 ---
 
 ## 🚀 Projeyi Çalıştırma ve Örnek Kullanım

@@ -9,7 +9,7 @@ Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geli
 
 ## ⚙️ Kullanılan Teknolojiler ve Kütüphaneler
 
-- **Python 3.13.2**  
+- **Python 3.x**  
   Proje Python programlama dili kullanılarak geliştirilmiştir.
 
 - **collections**  
@@ -34,7 +34,7 @@ Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geli
 - **Neden BFS?**  
   Aktarma sayısına odaklanan durumlarda en kısa yol bulunması için uygun bir algoritmadır.
 
-### 2. **A* (A-Star) Algoritması**
+### 2. **A\* (A-Star) Algoritması**
 - **Amaç**: İki istasyon arasındaki **en hızlı** rotayı bulur.
 - **Nasıl Çalışır?**  
   A* algoritması, her rotanın toplam süresini dikkate alarak en kısa süreli yolu önceliklendirir. Heuristic fonksiyonlar ve öncelik kuyruğu kullanılarak hedef istasyona en hızlı ulaşımı sağlar.
@@ -43,7 +43,7 @@ Gerçek dünya problemlerini algoritmik düşünce ile çözme becerilerini geli
   En hızlı yolu bulmada performanslıdır. Hem gerçek maliyeti (geçilen yolların süreleri), hem de tahmini maliyeti (hedefe olan uzaklık/süre) dikkate alır.
 
 - **Kodda Kullanılma Şekli**  
-  A* algoritmasından en iyi şekilde verim almak için vektörlerle çalışmak daha iyidir. Fakat kod içinde vektörler verilmediği ve vektörleri rastgele atayamayacağım (hata çıkma olasılığı yüksek) için A* algoritmasının heuristik değerini 0'a ayarladım. Heuristik değerinin 0'a ayarlanmasıyla birlikte A* algoritması Dijkstra algoritması gibi davranır. Yani daha yavaş ama güvenli.
+  A* algoritmasından en iyi şekilde verim almak için vektörlerle çalışmak daha iyidir. Fakat kod içinde vektörler verilmediği ve vektörleri rastgele atayamayacağım (hata çıkma olasılığı yüksek) için A* algoritmasının heuristik değerini 0'a ayarladım. Heuristik değerinin 0'a ayarlanmasıyla birlikte A* algoritması Dijkstra algoritması gibi davranır. Yani daha yavaş ve güvenli.
 
 ---
 
@@ -68,27 +68,30 @@ python metro_simulation.py
 
 ### Kullanım Senaryosu
 
-Kod çalıştırıldığında program sizden iki istasyon adı isteyecektir.
+Kod çalıştırıldığında, sabit olarak belirlenmiş istasyonlar üzerinden rotalar hesaplanır ve sonuçlar ekrana yazdırılır.
+
+Örneğin:
 
 ```
-Başlangıç istasyonunu girin: A
-Bitiş istasyonunu girin: E
+Senaryo 1: AŞTİ'den OSB'ye:
+En az aktarmalı rota: M1 -> K4
+En hızlı rota (15 dakika): M1 -> K4
 ```
 
-### Örnek Çıktı:
-```
-En Az Aktarma Rotası:
-A -> B -> E (Aktarma Sayısı: 1)
+Kod içerisinde başlangıç ve bitiş noktaları şu şekilde sabit olarak verilmiştir:
 
-En Hızlı Rota:
-A -> C -> D -> E (Toplam Süre: 15 dakika)
+```python
+rota = metro.en_az_aktarma_bul("M1", "K4")
+sonuc = metro.en_hizli_rota_bul("M1", "K4")
 ```
+
+Kendi istasyonlarınızı test etmek için bu değerleri değiştirebilirsiniz.
 
 ---
 
 ### Testler ve Doğrulamalar
 
-- Farklı başlangıç ve bitiş istasyonları ile test edebilirsiniz.
+- Farklı başlangıç ve bitiş istasyonları için kod üzerinde değişiklik yaparak test edebilirsiniz.
 - Rota mantığının ve sürelerin doğru hesaplandığını kontrol edin.
 
 ---
@@ -108,5 +111,6 @@ A -> C -> D -> E (Toplam Süre: 15 dakika)
 - [RedBlobGames - A*](https://www.redblobgames.com/pathfinding/a-star/introduction/)
 - [Python Collections Module](https://docs.python.org/3/library/collections.html)
 - [Python Heapq Module](https://docs.python.org/3/library/heapq.html)
+- [ChatGPT - Algoritmaların çalışma mantığını öğrenme ve kaynak araştırmalarında destek için](https://openai.com/chatgpt)
 
 ---
